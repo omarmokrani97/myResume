@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+
+* {font-family: 'Readex Pro';}
+
+
+a {
+    text-decoration: none;
+    color: white !important;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+a:hover {
+    color: #d33682 !important;
+    text-decoration: none;
+}
+
+/* removes the bullet points from unordered lists */
+ul {list-style-type: none;}
+
+/* horizontal rules */
+hr {
+    margin-top: 0px;
+    margin-bottom: 5%;
+}
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}

@@ -39,11 +39,6 @@ def stage_edu(a, b):
       st.text(b[0])
       st.write(b[1])
 
-
-
-
-
-
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
@@ -106,10 +101,6 @@ cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
 
-
-
-
-
 # --- SKILLS ---
 st.write('\n')
 st.subheader("Skills")
@@ -134,6 +125,7 @@ stage_edu(a=INH_pic , b= ["University of M'hamed Bougara | Boumerdes, Algeria","
 
 st.write('\n')
 
+# --- Bachelor
 txt("Bachelor’s degree in Geophysics","Sep. 2016 – juil. 2019")
 stage_edu(a=INH_pic , b= ["University of M'hamed Bougara | Boumerdes, Algeria","Faculty of Hydrocarbons and Chemistry (FHC | ex : INH)"])
 
@@ -143,17 +135,16 @@ st.write('\n')
 st.subheader("INTERNSHIPS")
 st.write("---")
 
-# --- JOB 1
+# --- INTERNSHIP 1
 txt("C.R.N.D | Draria, Algiers, Algeria","Juin. 2021 – Sept. 2021 (4 Months)")
 stage_edu(a=Crnd_pic , b= ["Draria Nuclear Research Center","Thesis title: `Analysis of the Aero-geophysical Information Acquired above the Tin Seririne Sedimentary Basin for the Delimitation of Potentially Favorable Perimeters for Uranium Research.`"])
 
 st.write('\n')
 
+# --- INTERNSHIP 2
 txt("E.NA.GEO | Hassi Messaoud, Algeria","Jan. 2019 (1 Month)")
 stage_edu(a=Enageo_pic , b= ["National Geophysical Company","`The purpose of this internship is to follow the different acquisition techniques used by E.NA.GEO, and to understand the structure of a seismic mission and these different teams, as well as the relationship between them.`"])
-
 st.write('\n')
-
 
 # --- Projects & Accomplishments ---
 st.write('\n')
